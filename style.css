@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top, .user-info{
+    height: 50%;
+    width: 100%;
+}
+
+.title, .info, .trial{
+    text-align: center;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.title{
+    font-size: 27px;
+    font-weight: 700;
+    
+}
+.info{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.trial{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 0;
+    border-radius: 5px;
+    height: 7%;
+    font-size: 12px;
+
+}
+.trial span{
+    font-weight: 800;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+    background-color: white;
+    padding: 10px 5px;
+}
+.inputs, .btn{
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 7px 0;
+    height: 2rem;
+}
+.inputs{
+    padding-left: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    margin-top: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+    color: hsl(249, 10%, 26%);
+    background-color: hsl(154, 62%, 63%);
+    transition: all ease-in-out .2s;
+}
+.disclaimer{
+    font-size: 9px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.disclaimer{
+    color: hsl(246, 25%, 77%);
+}
+.disclaimer span{
+    color:hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 500px) {
+    
+    .container{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .title, .info, .trial{
+        padding: 1rem 1rem;
+    }
+    .user-info{
+        gap: 22px;
+        margin: 2rem 0;
+        height: 45%;
+    }
+}
+@media screen and (min-width: 700px) {
+    
+    .title, .info, .trial{
+        padding: 2rem 1rem;
+    }
+    .user-info{
+        gap: 25px;
+        margin: 2rem 0;
+        height: 45%;
+        padding-top: 2rem;
+    }
+    .trial{
+        display: block;
+        position: absolute;
+        bottom: 4%;
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    .title, .info, .trial{
+        padding: 2rem 1rem;
+    }
+    .user-info{
+        gap: 25px;
+        margin: 2rem 0;
+        height: 45%;
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    body{
+        max-width: 1440px;
+        height: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        gap: 1rem;
+        height: 100vh;
+
+    }
+    .top, .user-info{
+        width: 50%;
+        height: 50%;
+        padding: 1rem 0;
+    }
+    .user-info{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .inputs, .btn{
+        height: 10%;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1, h2, .trial{
+        height: 10%;
+        padding: 1rem 10px;
+    }
+    .trial{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:900px) {
+        .trial{
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+        }
+}
+
+
+.inputs-error{
+    border: 1px solid red;
+}
+
+.inputs-valid{
+    border: 1px solid green;
+}
+
